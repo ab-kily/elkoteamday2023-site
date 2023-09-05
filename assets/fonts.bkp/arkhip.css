@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Arkhip';
+    src: url('Arkhip-Regular.eot');
+    src: url('Arkhip-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Arkhip-Regular.woff2') format('woff2'),
+        url('Arkhip-Regular.woff') format('woff'),
+        url('Arkhip-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

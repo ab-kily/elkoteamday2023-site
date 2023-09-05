@@ -1,0 +1,27 @@
+#!/usr/bin/php
+<?php
+
+namespace GT\Site;
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use GT\Site\Command\CheckinCronCommand;
+use M1\Env\Parser as EnvParser;
+
+$f3 = \Base::instance();
+
+$env = [];
+if(file_exists($envpath = __DIR__.'/.env')) {
+    $env = (new EnvParser(file_get_contents($envpath)))->getContent();
+}
+if(file_exists($configPath = __DIR__.'/config/main.php')) {
+    require $configPath;
+}
+if(!file_exists($assetsPath = __DIR__.'/assets')) {
+    @symlink($f3->get('UI').'assets',$assetsPath);
+}
+
+$application = new Application();
+$application->add(new CheckinCronCommand());
+$application->run();

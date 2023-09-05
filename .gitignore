@@ -1,0 +1,4 @@
+/vendor
+!/runtime/.gitignore
+/runtime
+/runtime/78afae44.db.sqlite

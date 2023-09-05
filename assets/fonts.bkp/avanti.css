@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Avanti';
+    src: url('AvantiBold.eot');
+    src: url('AvantiBold.eot?#iefix') format('embedded-opentype'),
+        url('AvantiBold.woff2') format('woff2'),
+        url('AvantiBold.woff') format('woff'),
+        url('AvantiBold.ttf') format('truetype'),
+        url('AvantiBold.svg#AvantiBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avanti';
+    src: url('Avanti.eot');
+    src: url('Avanti.eot?#iefix') format('embedded-opentype'),
+        url('Avanti.woff2') format('woff2'),
+        url('Avanti.woff') format('woff'),
+        url('Avanti.ttf') format('truetype'),
+        url('Avanti.svg#Avanti') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
